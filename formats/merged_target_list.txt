@@ -1,11 +1,17 @@
 FROM TARGET DATABASE
-- Galaxy-id   (int)
+- Object-id   (int)
 - RA  (float)
 - DEC (float)
 - ApparentType (string)
 
+FROM STANDARDS DATABASE 
+- Object-id (int)
+- RA (float)
+- DEC (float)
+- ApparentType (string)
+
 FROM DESIRESULTS DATABASE
-- Galaxy-id (int)
+- Object-id (int)
 - DesiType (string)
 - ObservationsDone (int)
 - z_spec (float)
@@ -20,7 +26,7 @@ FROM TILE FILE
 - Layer (int)
 
 WRITE MERGEDTARGETLIST FILE
-- Galaxy-id (int)
+- Object-id (int)
 - RA (float)
 - DEC (float)
 - FiberPriority (int)
