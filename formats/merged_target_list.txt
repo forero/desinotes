@@ -1,0 +1,27 @@
+FROM TARGET DATABASE
+- Galaxy-id   (int)
+- RA  (float)
+- DEC (float)
+- ApparentType (string)
+
+FROM DESIRESULTS DATABASE
+- Galaxy-id (int)
+- DesiType (string)
+- ObservationsDone (int)
+- z_spec (float)
+
+FROM TARGETSTRUCTURE FILE
+- Type (string)
+- ObservationsNeeded (int)
+- ObservationalProgram (string)
+- Priority (int)
+
+FROM TILE FILE
+- Layer (int)
+
+WRITE MERGEDTARGETLIST FILE
+- Galaxy-id (int)
+- RA (float)
+- DEC (float)
+- FiberPriority (int)
+- FiberObservationsNeeded (int)
