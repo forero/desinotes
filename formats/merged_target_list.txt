@@ -10,7 +10,7 @@ FROM STANDARDS FILE - not available
 - DEC (float)
 - ApparentType (string)
 
-FROM DESIRESULTS DATABASE
+FROM DESIRESULTS DATABASE - not available
 - Object-id (int)
 - DesiType (string)
 - ObservationsDone (int)
