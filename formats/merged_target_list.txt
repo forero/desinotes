@@ -22,8 +22,9 @@ FROM TARGETSTRUCTURE FILE - not available
 - ObservationalProgram (string): BRIGHT/DARK
 - Priority (int)
 
-FROM TILE FILE
+FROM TILING FILE
 - Layer (int)
+
 
 WRITE MERGEDTARGETLIST FILE (INPUT TO FIBERASSIGN)
 - Object-id (int)
