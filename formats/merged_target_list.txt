@@ -4,7 +4,7 @@ FROM TARGET DATABASE
 - DEC (float)
 - ApparentType (string)
 
-FROM STANDARDS DATABASE 
+FROM STANDARDS FILE - not available
 - Object-id (int)
 - RA (float)
 - DEC (float)
@@ -16,7 +16,7 @@ FROM DESIRESULTS DATABASE
 - ObservationsDone (int)
 - z_spec (float)
 
-FROM TARGETSTRUCTURE FILE
+FROM TARGETSTRUCTURE FILE - not available
 - Type (string)
 - ObservationsNeeded (int)
 - ObservationalProgram (string)
