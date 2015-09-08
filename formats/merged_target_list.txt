@@ -1,10 +1,10 @@
-FROM TARGET DATABASE
+FROM TARGET DATABASE 
 - Object-id   (int)
 - RA  (float)
 - DEC (float)
 - ApparentType (string)
 
-FROM STANDARDS FILE - not available
+FROM STANDARDS FILE - (standard stars & sky positions) - not available
 - Object-id (int)
 - RA (float)
 - DEC (float)
@@ -19,7 +19,7 @@ FROM DESIRESULTS DATABASE - not available
 FROM TARGETSTRUCTURE FILE - not available
 - Type (string)
 - ObservationsNeeded (int)
-- ObservationalProgram (string)
+- ObservationalProgram (string): BRIGHT/DARK
 - Priority (int)
 
 FROM TILE FILE
