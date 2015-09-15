@@ -26,8 +26,8 @@ FROM TARGETSTRUCTURE FILE - not available
 - ObservationsNeeded (int)
 - ObservationalProgram (string): BRIGHT/DARK
 - Priority (int): These are the default priorities in absence of
-spectroscopic knowledge. *We might want different priorities for
-different LRGs*
+spectroscopic knowledge. ***We might want different priorities for
+different LRGs***
 
 FROM TILING FILE
 - Layer (int): Right now each tileid belongs to a different
