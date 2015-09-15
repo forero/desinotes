@@ -14,7 +14,6 @@ FROM STANDARDS FILE - (standard stars & sky positions) - not available
 - **Type (int64): Integer target mask. Standard star might overlap
 with bright time targets [How often does that happen?]**
 
-
 FROM TARGETSTRUCTURE FILE   - not available
 - Type (string)
 - ObservationsNeeded (int)
