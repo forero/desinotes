@@ -26,6 +26,7 @@ FROM DESIRESULTS DATABASE - not available
 - Object-id (int)
 - DesiType (string)
 - ObservationsDone (int)
+- ObservationsNeeded (int)
 - z_spec (float)
 
 FROM TILING FILE 
