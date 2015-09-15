@@ -4,7 +4,7 @@ FROM TARGET DATABASE
 - DEC (float)
 - ApparentType (string)
 - **Type (int64): Integer target mask. Tackles the issue of targets
-belonging to more than one class. [How often does that happen?]**
+belonging to more than one class. [How often does that happen?]. **
 
 FROM STANDARDS FILE - (standard stars & sky positions) - not available
 - Object-id (int)
