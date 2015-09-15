@@ -3,33 +3,33 @@ FROM TARGET DATABASE
 - RA  (float)
 - DEC (float)
 - ApparentType (string)
-- * Type (int64): Integer target mask. Tackles the issue of targets
-belonging to more than one class. [How often does that happen?]* 
+- **Type (int64): Integer target mask. Tackles the issue of targets
+belonging to more than one class. [How often does that happen?]**
 
 FROM STANDARDS FILE - (standard stars & sky positions) - not available
 - Object-id (int)
 - RA (float)
 - DEC (float)
 - ApparentType (string)
-- * Type (int64): Integer target mask. Standard star might overlap
-with bright time targets [How often does that happen?]* 
+- **Type (int64): Integer target mask. Standard star might overlap
+with bright time targets [How often does that happen?]**
+
+
+FROM TARGETSTRUCTURE FILE   - not available
+- Type (string)
+- ObservationsNeeded (int)
+- ObservationalProgram (string): BRIGHT/DARK/BGS
+- Priority (int): These are the default priorities in absence of
+spectroscopic knowledge. **We might want different priorities for
+different LRGs**
 
 FROM DESIRESULTS DATABASE - not available
 - Object-id (int)
 - DesiType (string)
 - ObservationsDone (int)
 - z_spec (float)
-- **
 
-FROM TARGETSTRUCTURE FILE - not available
-- Type (string)
-- ObservationsNeeded (int)
-- ObservationalProgram (string): BRIGHT/DARK
-- Priority (int): These are the default priorities in absence of
-spectroscopic knowledge. ***We might want different priorities for
-different LRGs***
-
-FROM TILING FILE
+FROM TILING FILE 
 - Layer (int): Right now each tileid belongs to a different
 layer. Priorities might change for the last year/layer.
 
