@@ -6,7 +6,7 @@ FROM TARGET DATABASE
 - **Type (int64): Integer target mask. Tackles the issue of targets
 belonging to more than one class. [How often does that happen?].**
 
-FROM STANDARDS FILE - (standard stars & sky positions) - not available
+FROM STANDARDS FILE - (standard stars & sky positions) - not available - ideally some file on NERSC not SVN
 - Object-id (int)
 - RA (float)
 - DEC (float)
