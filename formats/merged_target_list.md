@@ -18,7 +18,7 @@ with bright time targets [How often does that happen?]**
 FROM TARGETSTRUCTURE FILE   - not available
 - Type (string)
 - ObservationsNeeded (int)
-- ObservationalProgram (string): BRIGHT/DARK/BGS
+- ObservationalProgram (string): BRIGHT/DARK
 - Priority (int): These are the default priorities in absence of
 spectroscopic knowledge. **We might want different priorities for
 different LRGs**
