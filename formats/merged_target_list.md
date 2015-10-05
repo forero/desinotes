@@ -2,7 +2,6 @@ FROM TARGET DATABASE
 - Object-id   (int)
 - RA  (float)
 - DEC (float)
-- ApparentType (string)
 - **Type (int64): Integer target mask. Tackles the issue of targets
 belonging to more than one class. [How often does that happen?].**
 
@@ -10,7 +9,6 @@ FROM STANDARDS FILE - (standard stars & sky positions) - not available - ideally
 - Object-id (int)
 - RA (float)
 - DEC (float)
-- ApparentType (string)
 - **Type (int64): Integer target mask. Standard star might overlap
 with bright time targets [How often does that happen?]**
 
@@ -18,6 +16,7 @@ FROM TARGETSTRUCTURE FILE   - not available
 - Type (string)
 - ObservationsNeeded (int)
 - ObservationalProgram (string): BRIGHT/DARK
+- Type (int64): Integer target mask.
 - Priority (int): These are the default priorities in absence of
 spectroscopic knowledge. **We might want different priorities for
 different LRGs**
