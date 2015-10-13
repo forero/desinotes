@@ -2,35 +2,35 @@ FROM TARGET DATABASE
 - Object-id   (int)
 - RA  (float)
 - DEC (float)
-- **Type (int64): Integer target mask. Tackles the issue of targets
-belonging to more than one class. [How often does that happen?].**
+- Type (int64): Integer target mask. 
 
-FROM STANDARDS FILE - (standard stars & sky positions) - not available - ideally some file on NERSC not SVN
+FROM STANDARDS FILE - (standard stars & sky positions) - not available - ideally some file on NERSC not SVN. Probably produced during target selection.
 - Object-id (int)
 - RA (float)
 - DEC (float)
-- **Type (int64): Integer target mask. Standard star might overlap
-with bright time targets [How often does that happen?]**
+- Type (int64): Integer target mask. 
 
-FROM TARGETSTRUCTURE FILE   - not available
-- Type (string)
-- ObservationsNeeded (int)
-- ObservationalProgram (string): BRIGHT/DARK
+
+FROM TARGETSTRUCTURE FILE  
+- ObservationalProgram (string): BRIGHT/DARK/ANY
 - Type (int64): Integer target mask.
 - Priority (int): These are the default priorities in absence of
-spectroscopic knowledge. **We might want different priorities for
-different LRGs**
+spectroscopic knowledge. 
+- ObservationsNeeded (int)
+
+
+FROM DESIOBSERVATIONS DATABASE - not available
+- Object-id (int)
+- ObservedFlag (int)
 
 FROM DESIRESULTS DATABASE - not available
 - Object-id (int)
-- DesiType (string)
-- ObservationsDone (int)
-- ObservationsNeeded (int)
+- Type (string)
 - z_spec (float)
 
 FROM TILING FILE 
 - Layer (int): Right now each tileid belongs to a different
-layer. Priorities might change for the last year/layer.
+layer. Priorities might change for the last year/layer. 
 
 WRITE MERGEDTARGETLIST FILE (INPUT TO FIBERASSIGN)
 - Object-id (int)
